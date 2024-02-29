@@ -1,0 +1,12 @@
+function r = NewtonMethod(x_0,M,d,e)
+v = atan(x_0);
+if abs(v)<e
+    return;
+end
+for k = 1:M
+    x_1 = x_0 - v/(1/(x_0^2+1));
+    v = atan(x_1);
+    if abs(x_1-x_0)<d || 
+end
+
+end

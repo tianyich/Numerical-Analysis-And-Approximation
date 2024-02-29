@@ -1,0 +1,12 @@
+function x_1 = NewtonMethodSystem(x_0,M,e,d)
+syms x y
+f1 = @(x,y) 4*y^2+4*y + 52*x -19;
+f2 = @(x,y) 169*x^2+3*y^2+111*x-10*y-10;
+x_0 = [x_0,y_0];
+F = [f1(x_0,y_0); f2(x_0,y_0)];
+f1_dx = diff(f1,x);
+
+J = [];
+
+
+end
